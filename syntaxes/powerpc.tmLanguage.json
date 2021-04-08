@@ -95,11 +95,11 @@
 		"entities": {
 			"patterns": [
 				{
-					"match": "\\.(text|data|bss)",
+					"match": "\\.(text|data|bss|rodata)",
 					"name": "entity.name.section.powerpc"
 				},
 				{
-					"match": "\\.(align|balign|fill|incbin|include|set|extern|space)",
+					"match": "\\.(align|balign|fill|incbin|set|extern|space)",
 					"name": "entity.name.cmd.powerpc"
 				},
 				{
@@ -108,7 +108,7 @@
 				},
 				{
 					"name": "entity.name.cmd.powerpc",
-					"match": "(\\.(section)) (\\.(text|data|bss))",
+					"match": "(\\.(section)) (\\.(text|data|bss|rodata))",
 					"captures": {
 						"1": {
 							"name": "entity.name.cmd.powerpc.cmd"
@@ -133,6 +133,10 @@
 				{
 					"match": "\\w+:",
 					"name": "entity.name.function.powerpc"
+				},
+				{
+					"match": "\\.(include)",
+					"name": "variable.parameter"
 				}
 			]
 		},
@@ -275,7 +279,7 @@
 					"name": "keyword.mnemonic.branch.conditional.count"
 				},
 				{
-					"match": "\\b((bnelr|beqlr|bltlr|blelr|bgtlr|bgelr|bctr|bctrl|blrl)[-+]?)",
+					"match": "\\b((bnelr|beqlr|bltlr|blelr|bgtlr|bgelr|bctrl|bctr|blrl)[-+]?)",
 					"name": "aaaakeyword.mnemonic.branch.conditional.misc",
 					"captures": {
 						"1": {
@@ -514,6 +518,10 @@
 			"patterns": [
 				{
 					"match": "\\b(cntlzw|eciwx|ecowx|eieio|eqv|extsb|extsh|icbi|isync|sync|rfi|sc)\\b",
+					"name": "keyword.mnemonic.misc"
+				},
+				{
+					"match": "\\b(insrwi|extrwi|fcmpu|clrlwi|bctrl|beqctr)\\b",
 					"name": "keyword.mnemonic.misc"
 				}
 			]

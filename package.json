@@ -2,7 +2,7 @@
     "name": "vcode-ppc",
     "displayName": "PowerPC",
     "description": "PowerPC Assembly Language Support",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "zachsez",
     "author": {
         "name": "Zach Szczesniak"
