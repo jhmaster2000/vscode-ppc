@@ -1,3 +1,6 @@
+# NOTE: Instructions with 0 next to them need a
+# value next to them like that to highlight properly.
+
 # and
 and
 andc
@@ -7,18 +10,18 @@ crand
 crandc
 
 # branch
-b
-ba
-bl
-bla
+b 0
+ba 0
+bl 0
+bla 0
 bc
 bca 
 bcl 
 bcla 
 bcctr
 bcctrl
-bclr 
-bclrl
+bclr 0
+bclrl 0
 
 # compare
 cmp 
@@ -161,9 +164,9 @@ subfme
 subfmeo
 subfze
 subfzeo
-sub
-subi
-subis
+sub 0
+subi 0
+subis 0
 
 # shift
 slw			# shift left word

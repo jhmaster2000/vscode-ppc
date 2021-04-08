@@ -132,7 +132,7 @@
 				},
 				{
 					"match": "\\.(include)",
-					"name": "variable.parameter"
+					"name": "variable.parameter.cpp"
 				}
 			]
 		},
@@ -294,6 +294,10 @@
 							"name": "entity.name.function.powerpc"
 						}
 					}
+				},
+				{
+					"match": "\\b(bclr|bclrl)\\b",
+					"name": "keyword.mnemonic.branch"
 				}
 			]
 		},
