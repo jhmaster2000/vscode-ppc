@@ -35,10 +35,6 @@
 					"name": "comment.line.double-slash.powerpc"
 				},
 				{
-					"match": "(;).*$",
-					"name": "comment.line.semicolon.powerpc"
-				},
-				{
 					"match": "(# ).*$",
 					"name": "comment.line.hash.powerpc"
 				},
