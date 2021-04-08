@@ -37,3 +37,5 @@ ExampleLabel:
     lfd
     beqctr
     stfs
+    lfsx
+    crclr
