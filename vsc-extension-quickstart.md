@@ -1,4 +1,4 @@
-# Welcome to your VS Code Extension
+# Development Setup
 
 ## What's in the folder
 
