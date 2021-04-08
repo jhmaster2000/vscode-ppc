@@ -20,6 +20,7 @@ cmp     r5, r6  // After instruction
 
 subf     r0, // Some comment r2
 
+# this is not valid asm  (why is it here?)
 mulli   r2, #Some comment r6
 
 /*
