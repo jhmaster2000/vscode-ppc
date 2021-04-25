@@ -14,6 +14,9 @@ None
 
 ## Release Notes
 
+### 0.0.6
+- Added frsub and frsp
+
 ### 0.0.5
 
 - Added some missing instructions

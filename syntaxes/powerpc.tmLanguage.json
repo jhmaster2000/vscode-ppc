@@ -521,7 +521,7 @@
 					"name": "keyword.mnemonic.misc"
 				},
 				{
-					"match": "\\b(insrwi|extrwi|fcmpu|clrlwi|bctrl|beqctr|lfsx|crclr)\\b",
+					"match": "\\b(insrwi|extrwi|fcmpu|clrlwi|bctrl|beqctr|lfsx|crclr|frsub|frsp)\\b",
 					"name": "keyword.mnemonic.misc"
 				}
 			]

@@ -13,6 +13,7 @@ ExampleDataLabel: 0x5
 
 .global ExampleLabel
 ExampleLabel:
+    invalidinstruction
     bnelr
     srwi
     beqlr
@@ -39,3 +40,5 @@ ExampleLabel:
     stfs
     lfsx
     crclr
+    frsub
+    frsp
