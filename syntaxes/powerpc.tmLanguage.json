@@ -35,7 +35,7 @@
 					"name": "comment.line.double-slash.powerpc"
 				},
 				{
-					"match": "(# ).*$",
+					"match": "#.*$",
 					"name": "comment.line.hash.powerpc"
 				},
 				{
@@ -91,20 +91,20 @@
 		"entities": {
 			"patterns": [
 				{
-					"match": "\\.(text|data|bss|rodata)",
+					"match": "\\.(text|data|bss|rodata|sdata2|sdata|note|org|section|previous|dsect|comm|lcomm|lsbss|sbss)( |$|;|,|#|/)",
 					"name": "entity.name.section.powerpc"
 				},
 				{
-					"match": "\\.(align|balign|fill|incbin|set|extern|space)",
+					"match": "\\.(align|balign|fill|incbin|set|extern|space|vle|novle|need|ident|file|fsize|size|scall|type|eject|gen|nogen|list|nolist|title|subtitle|sbttl|rept|endr|macrodef|macro|endm|exitm|if|elseif|else|endif|end|equ|inspect|nowarning)( |$|;|,|#|/)",
 					"name": "entity.name.cmd.powerpc"
 				},
 				{
-					"match": "\\.(ascii|asciz|byte|double|float|int|quad|short|single|string|word|long)",
+					"match": "\\.(ascii|asciz|byte|double|float|int|quad|short|single|string|word|long|strz|skip|offset|weak)( |$|;|,|#|/)",
 					"name": "entity.name.cmd.datatype.powerpc"
 				},
 				{
 					"name": "entity.name.cmd.powerpc",
-					"match": "(\\.(section)) (\\.(text|data|bss|rodata))",
+					"match": "(\\.(section)) (\\.(text|data|bss|rodata|sdata2|sdata)( |$|;|,|#|/))",
 					"captures": {
 						"1": {
 							"name": "entity.name.cmd.powerpc.cmd"
@@ -116,10 +116,10 @@
 				},
 				{
 					"name": "entity.name.cmd.powerpc",
-					"match": "(\\.(globl|global)) ([\\w \\,]+)",
+					"match": "(\\.(globl|global)) ([\\w \\,]+)( |$|;|,|#|/)",
 					"captures": {
 						"1": {
-							"name": "entity.name.cmd.powerpc.cmd"
+							"name": "variable.parameter.cpp"
 						},
 						"3": {
 							"name": "entity.name.function.powerpc"
@@ -127,11 +127,11 @@
 					}
 				},
 				{
-					"match": "\\w+:",
+					"match": "\\w+:( |$|;|,|#|/)",
 					"name": "entity.name.function.powerpc"
 				},
 				{
-					"match": "\\.(include)",
+					"match": "\\.(include|error|warning)( |$|;|,|#|/)",
 					"name": "variable.parameter.cpp"
 				}
 			]

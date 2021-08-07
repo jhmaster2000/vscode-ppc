@@ -4,14 +4,14 @@ ExampleDataLabel: 0x5
 .text
 .include "exampleinclude.S"
 
-# comment this: lis b ori 0x0
+#comment this: lis b ori 0x0
 # peak of template strings
 .set "asdfsifjeif"
 .section .text
 .section .rodata
 .align 69
 
-.global ExampleLabel
+.globl ExampleLabel
 ExampleLabel:
     invalidinstruction
     bnelr
@@ -32,6 +32,7 @@ ExampleLabel:
     bctrl
     eciwx
     lis b ori 0x0
+    ori 0x0
     bne
     bctr
     beq
