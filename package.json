@@ -2,7 +2,7 @@
     "name": "vscode-ppc",
     "displayName": "PowerPC",
     "description": "PowerPC Assembly Language Support",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "zachsez",
     "author": {
         "name": "Zach Szczesniak"
@@ -18,7 +18,7 @@
         "languages": [{
             "id": "powerpc",
             "aliases": ["PowerPC Assembly", "powerpc"],
-            "extensions": [".S",".s",".asm",".ppc"],
+            "extensions": [".S", ".s", ".asm", ".ppc"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{

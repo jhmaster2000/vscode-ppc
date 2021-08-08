@@ -14,6 +14,10 @@ None
 
 ## Release Notes
 
+### 0.0.7
+- Added a bunch of missing assembler directives (`.<stuff>`)
+- Added hundreds of missing instructions
+
 ### 0.0.6
 - Added frsub and frsp
 

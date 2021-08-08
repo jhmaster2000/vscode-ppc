@@ -517,11 +517,11 @@
 		"mnemonic-misc": {
 			"patterns": [
 				{
-					"match": "\\b(cntlzw|eciwx|ecowx|eieio|eqv|extsb|extsh|icbi|isync|sync|rfi|sc)\\b",
+					"match": "\\b(cntlzw|eciwx|ecowx|eieio|eqv|extsb|extsh|icbi|isync|sync|rfi|sc|tlbli|tlbli|tlbld|tdi|td|svc|stq|stfsx|stfsux|stfsu|stfqx|stfqux|stfqu|stfq|stfdx|stfdux|stfdu|stdx|stdux|stdu|stdcx|std|srq|srlq|srliq|sriq|sreq|srea|sre|srd|sraq|sraiq|sradi|srad|slq|sllq|slliq|sliq|sleq|sle|sld|si|scv|rrib|rlmi|rldimi|rldicr|rldicl|rldic|rldcr|rldicl|rldcl|rfsvc|rfid|rac|popcntbd|nabs|mulld|mulhdu|mulhd|mul|mtocrf|mtfsfi|mtfsf|mtfsb1|mtfsb0|mfsri|mfsr|mfocrf|mffs|mcrfs|maskir|maskg|lwax|lwaux|lwa|lscbx|lq|lfsux|lfsu|lfqx|lfqux|lfqu|lfq|lfdx|lfdux|lfdu|ldx|ldux|ldu|ldarx|ld|fsub|fsqrts|fsqrt|fsel|frsqrte|fres|fnmsub|fnmadd|fneg|fnabs|fmul|fmsub|fmadd|fdiv|fctiwz|fctidz|fctid|fcmpo|fcfid|fadd|extsw|dozi|doz|divs|divdu|divd|dclst|cntlzd|cli|clf|clcs|abs)\\b",
 					"name": "keyword.mnemonic.misc"
 				},
 				{
-					"match": "\\b(insrwi|extrwi|fcmpu|clrlwi|bctrl|beqctr|lfsx|crclr|frsub|frsp)\\b",
+					"match": "\\b(insrwi|extrwi|fcmpu|clrlwi|bctrl|beqctr|lfsx|crclr|frsub|frsp|bng|bnl|bso|bns|bun|bnu|bdnzt|bdnzf|bdz|vxor|vupklsh|vupklsb|vupklpx|vupkhsh|vupkhsb|vupkhpx|vsum4ubs|vsum4shs|vsum4sbs|vsum2sws|vsumsws|vsubuws|vsubuwm|vsubuhs|vsubuhm|vsububs|vsububm|vsubsws|vsubshs|vsubsbs|vsubfp|vsubcuw|vsrw|vsro|vsrh|vsrb|vsraw|vsrah|vsrab|vsr|vspltw|vspltisw|vspltish|vspltisb|vsplth|vspltb|vslw|vslo|vslh|vsldoi|vslb|vsl|vsel|vrsqrtefp|vrlw|vrlh|vrlb|vrfiz|vrfip|vrfin|vrfim|vrefp|vpkuwus|vpkuwum|vpkuhus|vpkuhum|vpkswus|vpkswss|vpkshus|vpkshss|vpkpx|vperm|vor|vnor|vnmsubfp|vmulouh|vmuloub|vmulosh|vmulosb|vmuleuh|vmuleub|vmulesh|vmulesb|vmsumuhs|vmsumuhm|vmsumubm|vmsumshs|vmsumshm|vmsummbm|vmrglw|vmrglh|vmrglb|vmrghw|vmrghh|vmrghb|vmladduhm|vminuw|vminuh|vminub|vminsw|vminsh|vminsb|vminfp|vmhraddshs|vmhaddshs|vmaxuw|vmaxuh|vmaxub|vmaxsw|vmaxsh|vmaxsb|vmaxfp|vmaddfp|vlogefp|vexptefp|vctuxs|vctsxs|vcmpgtuwx|vcmpgtuhx|vcmpgtubx|vcmpgtswx|vcmpgtshx|vcmpgtsbx|vcmpgtfpx|vcmpgefpx|vcmpequwx|vcmpequhx|vcmpequbx|vcmpeqfpx|vcmpbfpx|vcfux|vcfsx|vavguw|vavguh|vavgub|vavgsw|vavgsh|vavgsb|vandc|vand|vadduws|vadduwm|vadduhs|vadduhm|vaddubs|vaddubm|vaddsws|vaddshs|vaddsbs|vaddfp|vaddcuw|stvxl|stvx|stvewx|stvehx|stvebx|mtvscr|mfvscr|lvxl|lvx|lvsr|lvsl|lvewx|lvehx|lvebx|dstt|dststt|dstst|dst|dssall|dss|ps_merge10|mtibatu|mtibatl|mfibatu|mfibatl|mftbu|mttbu|mttb|mtdbatu|mtdbatl|mfdbatu|mfdbatl|mtear|mfsrin|mfpvr|mfear|fsubs|fnmsubs|fnmadds|fmsubs|fmadds|mfbatl|mfbatu|mtbatl|mtbatu)\\b",
 					"name": "keyword.mnemonic.misc"
 				}
 			]
